@@ -6,7 +6,7 @@ Paper link: https://openreview.net/forum?id=Y5hbfFtOH1
 
 ## Method
 
-SAP represents each code using the two largest algebraic eigenvalues of its parity-check bipartite adjacency matrix. It retrieves the nearest library signature by Euclidean distance and reuses its head/FFN masks when $exp(-0.1 \times \text{distance}) \leq 0.5$. Otherwise, it derives a target-specific Fisher mask and adds it to the library before retraining.
+SAP represents each code using the two largest algebraic eigenvalues of its parity-check bipartite adjacency matrix. It retrieves the nearest library signature by Euclidean distance and reuses its head/FFN masks when $exp(-0.1 \times \text{distance}) \geq 0.5$. Otherwise, it derives a target-specific Fisher mask and adds it to the library before retraining.
 
 Masks physically remove attention heads and FFN channels. Masks physically remove attention heads and FFN channels. Recovery freezes the pruned backbone and trains LoRA adapters on the attention projection matrices ($W_Q$, $W_K$, $W_V$, and $W_O$) in all decoder layers, using BCE + KD loss from the unpruned pretrained teacher.
 
