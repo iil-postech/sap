@@ -1,6 +1,6 @@
 # SAP: Spectral-Aligned Pruning for Universal Error-Correcting Code Transformers
 
-Implementation of SAP.
+This repository provides the official implementation of "Spectral-aligned pruning for universal error-correcting code transformers" (NeurIPS 2026). 
 
 Paper link: https://openreview.net/forum?id=Y5hbfFtOH1
 
