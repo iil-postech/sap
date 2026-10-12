@@ -1,6 +1,6 @@
 # SAP: Spectral-Aligned Pruning for Universal Error-Correcting Code Transformers
 
-Implementation of SAP with FECCT pretraining, automatic pruning-mask retrieval, and LoRA retraining.
+Implementation of SAP.
 
 Paper link: https://openreview.net/forum?id=Y5hbfFtOH1
 
